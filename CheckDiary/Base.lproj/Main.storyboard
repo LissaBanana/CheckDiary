@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cH4-qo-8fS">
-                                <rect key="frame" x="209" y="595" width="46" height="30"/>
+                                <rect key="frame" x="115" y="404" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -75,24 +75,16 @@
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oF2-0k-HxZ">
-                                <rect key="frame" x="190" y="37" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SL7-nJ-qmv">
+                                <rect key="frame" x="190" y="75" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="出来た"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rs-Fe-vYS">
-                                <rect key="frame" x="190" y="75" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="まあまあ"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zp2-Hg-kSU">
-                                <rect key="frame" x="190" y="113" width="62" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="そんなに"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="インド人のフリーアイコン3 (1).png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="mama:" destination="hl8-Id-ohx" eventType="touchUpInside" id="mtc-E1-qaq"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FyN-6J-foK">
                                 <rect key="frame" x="43" y="201" width="289" height="108"/>
@@ -106,10 +98,13 @@
                                 <rect key="frame" x="67" y="338" width="240" height="240"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4e-rd-hDv">
-                                <rect key="frame" x="190" y="151" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhM-93-I0k">
+                                <rect key="frame" x="320" y="20" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ぜんぜん"/>
+                                <state key="normal" title="save"/>
+                                <connections>
+                                    <action selector="savememo" destination="hl8-Id-ohx" eventType="touchUpInside" id="5Ut-13-u81"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enB-3C-N6C">
                                 <rect key="frame" x="25" y="13" width="46" height="30"/>
@@ -119,12 +114,46 @@
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="5ce-si-9d8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhM-93-I0k">
-                                <rect key="frame" x="320" y="20" width="32" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oF2-0k-HxZ">
+                                <rect key="frame" x="190" y="32" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="save"/>
+                                <color key="tintColor" red="0.050288374609999999" green="0.046969708950000001" blue="0.10322810910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="インド人のフリーアイコン3 (1).png">
+                                    <color key="titleColor" red="0.050288374609999999" green="0.046969708950000001" blue="0.10322810910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="savememo" destination="hl8-Id-ohx" eventType="touchUpInside" id="5Ut-13-u81"/>
+                                    <action selector="dekitayo:" destination="hl8-Id-ohx" eventType="touchUpInside" id="goF-Vf-cnr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5F-y1-Mf6">
+                                <rect key="frame" x="190" y="118" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="インド人のフリーアイコン3 (1).png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sonnnani:" destination="hl8-Id-ohx" eventType="touchUpInside" id="3t4-iu-efL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frF-eO-Aaj">
+                                <rect key="frame" x="67" y="338" width="240" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93015146260000003" green="0.57254767419999997" blue="0.78541845079999995" alpha="0.93589469179999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="写真とるよ"/>
+                                <connections>
+                                    <action selector="takePhoto" destination="hl8-Id-ohx" eventType="touchUpInside" id="fWn-YK-AZo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0E9-mL-0aP">
+                                <rect key="frame" x="190" y="161" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.050288374609999999" green="0.046969708950000001" blue="0.10322810910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="インド人のフリーアイコン3 (1).png">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="zenzen:" destination="hl8-Id-ohx" eventType="touchUpInside" id="PLR-77-Cc8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -132,12 +161,17 @@
                         <viewLayoutGuide key="safeArea" id="xZB-PQ-bIT"/>
                     </view>
                     <connections>
+                        <outlet property="cameraImageView" destination="pnV-LX-McT" id="ds4-Rc-X23"/>
                         <outlet property="contentTextView" destination="FyN-6J-foK" id="DNE-Ia-EL3"/>
+                        <outlet property="dekitayo" destination="oF2-0k-HxZ" id="1RN-b6-gmi"/>
+                        <outlet property="mama" destination="SL7-nJ-qmv" id="FF7-se-G8T"/>
+                        <outlet property="sonnnani" destination="d5F-y1-Mf6" id="Cgv-04-RcO"/>
+                        <outlet property="zenzen" destination="0E9-mL-0aP" id="hDt-1H-f4u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8UC-Yl-nwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="958" y="45"/>
+            <point key="canvasLocation" x="2666" y="12"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Evc-tz-8OX">
@@ -152,7 +186,10 @@
                     </view>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3249" y="45"/>
+            <point key="canvasLocation" x="3562" y="45"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="インド人のフリーアイコン3 (1).png" width="32" height="32"/>
+    </resources>
 </document>

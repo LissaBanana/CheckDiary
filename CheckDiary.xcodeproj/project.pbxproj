@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		CB3CEB9921B27B5D00E27771 /* todayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3CEB9821B27B5D00E27771 /* todayViewController.swift */; };
+		CB3CEB9E21C4E50E00E27771 /* インド人のフリーアイコン3.png in Resources */ = {isa = PBXBuildFile; fileRef = CB3CEB9C21C4E50C00E27771 /* インド人のフリーアイコン3.png */; };
+		CB3CEB9F21C4E50E00E27771 /* インド人のフリーアイコン3 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = CB3CEB9D21C4E50D00E27771 /* インド人のフリーアイコン3 (1).png */; };
+		CB3CEBA421C50A8000E27771 /* インド人のフリーアイコン3 (2).png in Resources */ = {isa = PBXBuildFile; fileRef = CB3CEBA321C50A7F00E27771 /* インド人のフリーアイコン3 (2).png */; };
 		CCD6709B21B266DA0089D1E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD6709A21B266DA0089D1E8 /* AppDelegate.swift */; };
 		CCD6709D21B266DA0089D1E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD6709C21B266DA0089D1E8 /* ViewController.swift */; };
 		CCD670A021B266DA0089D1E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD6709E21B266DA0089D1E8 /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		CB3CEB9821B27B5D00E27771 /* todayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayViewController.swift; sourceTree = "<group>"; };
+		CB3CEB9C21C4E50C00E27771 /* インド人のフリーアイコン3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "インド人のフリーアイコン3.png"; sourceTree = "<group>"; };
+		CB3CEB9D21C4E50D00E27771 /* インド人のフリーアイコン3 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "インド人のフリーアイコン3 (1).png"; sourceTree = "<group>"; };
+		CB3CEBA321C50A7F00E27771 /* インド人のフリーアイコン3 (2).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "インド人のフリーアイコン3 (2).png"; sourceTree = "<group>"; };
 		CCD6709721B266D90089D1E8 /* CheckDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCD6709A21B266DA0089D1E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCD6709C21B266DA0089D1E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +89,9 @@
 				CCD670AE21B266DB0089D1E8 /* CheckDiaryTests */,
 				CCD670B921B266DB0089D1E8 /* CheckDiaryUITests */,
 				CCD6709821B266D90089D1E8 /* Products */,
+				CB3CEB9D21C4E50D00E27771 /* インド人のフリーアイコン3 (1).png */,
+				CB3CEB9C21C4E50C00E27771 /* インド人のフリーアイコン3.png */,
+				CB3CEBA321C50A7F00E27771 /* インド人のフリーアイコン3 (2).png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,9 +241,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3CEBA421C50A8000E27771 /* インド人のフリーアイコン3 (2).png in Resources */,
 				CCD670A521B266DB0089D1E8 /* LaunchScreen.storyboard in Resources */,
 				CCD670A221B266DB0089D1E8 /* Assets.xcassets in Resources */,
+				CB3CEB9F21C4E50E00E27771 /* インド人のフリーアイコン3 (1).png in Resources */,
 				CCD670A021B266DA0089D1E8 /* Main.storyboard in Resources */,
+				CB3CEB9E21C4E50E00E27771 /* インド人のフリーアイコン3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Tomoyuki-Hayakawa.CheckDiary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -466,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Tomoyuki-Hayakawa.CheckDiary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
