@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB28997021E76497002AA855 /* スクリーンショット 2019-01-10 20.29.35.png in Resources */ = {isa = PBXBuildFile; fileRef = CB28996F21E76497002AA855 /* スクリーンショット 2019-01-10 20.29.35.png */; };
+		CB28997421E76766002AA855 /* お家.png in Resources */ = {isa = PBXBuildFile; fileRef = CB28997321E76766002AA855 /* お家.png */; };
+		CB28997621E76B22002AA855 /* ひまわりの種.png in Resources */ = {isa = PBXBuildFile; fileRef = CB28997521E76B21002AA855 /* ひまわりの種.png */; };
+		CB28997821E76B75002AA855 /* 土！！！.png in Resources */ = {isa = PBXBuildFile; fileRef = CB28997721E76B75002AA855 /* 土！！！.png */; };
+		CB28997A21E76CFD002AA855 /* ひまわり途中.png in Resources */ = {isa = PBXBuildFile; fileRef = CB28997921E76CFD002AA855 /* ひまわり途中.png */; };
+		CB28997C21E76D4F002AA855 /* ひまわりの双葉.png in Resources */ = {isa = PBXBuildFile; fileRef = CB28997B21E76D4F002AA855 /* ひまわりの双葉.png */; };
+		CB28998221E9C360002AA855 /* ひまわりの種(ガチ).png in Resources */ = {isa = PBXBuildFile; fileRef = CB28997F21E9C35F002AA855 /* ひまわりの種(ガチ).png */; };
+		CB28998321E9C360002AA855 /* ひまわりの双葉(ガチ).png in Resources */ = {isa = PBXBuildFile; fileRef = CB28998021E9C35F002AA855 /* ひまわりの双葉(ガチ).png */; };
+		CB28998421E9C360002AA855 /* ひまわり途中(ガチ).png in Resources */ = {isa = PBXBuildFile; fileRef = CB28998121E9C360002AA855 /* ひまわり途中(ガチ).png */; };
+		CB28998821E9CCDB002AA855 /* ひまわり茎.png in Resources */ = {isa = PBXBuildFile; fileRef = CB28998721E9CCDB002AA855 /* ひまわり茎.png */; };
+		CB28998A21E9CE32002AA855 /* ひまわり(ガチ).png in Resources */ = {isa = PBXBuildFile; fileRef = CB28998921E9CE32002AA855 /* ひまわり(ガチ).png */; };
 		CB3CEB9921B27B5D00E27771 /* todayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3CEB9821B27B5D00E27771 /* todayViewController.swift */; };
 		CB3CEB9E21C4E50E00E27771 /* インド人のフリーアイコン3.png in Resources */ = {isa = PBXBuildFile; fileRef = CB3CEB9C21C4E50C00E27771 /* インド人のフリーアイコン3.png */; };
 		CB3CEB9F21C4E50E00E27771 /* インド人のフリーアイコン3 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = CB3CEB9D21C4E50D00E27771 /* インド人のフリーアイコン3 (1).png */; };
@@ -38,6 +49,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB28996F21E76497002AA855 /* スクリーンショット 2019-01-10 20.29.35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "スクリーンショット 2019-01-10 20.29.35.png"; sourceTree = "<group>"; };
+		CB28997321E76766002AA855 /* お家.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "お家.png"; sourceTree = "<group>"; };
+		CB28997521E76B21002AA855 /* ひまわりの種.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひまわりの種.png"; sourceTree = "<group>"; };
+		CB28997721E76B75002AA855 /* 土！！！.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "土！！！.png"; sourceTree = "<group>"; };
+		CB28997921E76CFD002AA855 /* ひまわり途中.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひまわり途中.png"; sourceTree = "<group>"; };
+		CB28997B21E76D4F002AA855 /* ひまわりの双葉.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひまわりの双葉.png"; sourceTree = "<group>"; };
+		CB28997F21E9C35F002AA855 /* ひまわりの種(ガチ).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひまわりの種(ガチ).png"; sourceTree = "<group>"; };
+		CB28998021E9C35F002AA855 /* ひまわりの双葉(ガチ).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひまわりの双葉(ガチ).png"; sourceTree = "<group>"; };
+		CB28998121E9C360002AA855 /* ひまわり途中(ガチ).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひまわり途中(ガチ).png"; sourceTree = "<group>"; };
+		CB28998721E9CCDB002AA855 /* ひまわり茎.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひまわり茎.png"; sourceTree = "<group>"; };
+		CB28998921E9CE32002AA855 /* ひまわり(ガチ).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ひまわり(ガチ).png"; sourceTree = "<group>"; };
 		CB3CEB9821B27B5D00E27771 /* todayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todayViewController.swift; sourceTree = "<group>"; };
 		CB3CEB9C21C4E50C00E27771 /* インド人のフリーアイコン3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "インド人のフリーアイコン3.png"; sourceTree = "<group>"; };
 		CB3CEB9D21C4E50D00E27771 /* インド人のフリーアイコン3 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "インド人のフリーアイコン3 (1).png"; sourceTree = "<group>"; };
@@ -89,9 +111,20 @@
 				CCD670AE21B266DB0089D1E8 /* CheckDiaryTests */,
 				CCD670B921B266DB0089D1E8 /* CheckDiaryUITests */,
 				CCD6709821B266D90089D1E8 /* Products */,
+				CB28997521E76B21002AA855 /* ひまわりの種.png */,
 				CB3CEB9D21C4E50D00E27771 /* インド人のフリーアイコン3 (1).png */,
+				CB28997F21E9C35F002AA855 /* ひまわりの種(ガチ).png */,
+				CB28998021E9C35F002AA855 /* ひまわりの双葉(ガチ).png */,
+				CB28998121E9C360002AA855 /* ひまわり途中(ガチ).png */,
 				CB3CEB9C21C4E50C00E27771 /* インド人のフリーアイコン3.png */,
+				CB28998721E9CCDB002AA855 /* ひまわり茎.png */,
+				CB28997B21E76D4F002AA855 /* ひまわりの双葉.png */,
+				CB28998921E9CE32002AA855 /* ひまわり(ガチ).png */,
+				CB28997921E76CFD002AA855 /* ひまわり途中.png */,
 				CB3CEBA321C50A7F00E27771 /* インド人のフリーアイコン3 (2).png */,
+				CB28996F21E76497002AA855 /* スクリーンショット 2019-01-10 20.29.35.png */,
+				CB28997321E76766002AA855 /* お家.png */,
+				CB28997721E76B75002AA855 /* 土！！！.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,11 +275,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB3CEBA421C50A8000E27771 /* インド人のフリーアイコン3 (2).png in Resources */,
+				CB28997421E76766002AA855 /* お家.png in Resources */,
+				CB28998A21E9CE32002AA855 /* ひまわり(ガチ).png in Resources */,
+				CB28998421E9C360002AA855 /* ひまわり途中(ガチ).png in Resources */,
+				CB28998821E9CCDB002AA855 /* ひまわり茎.png in Resources */,
 				CCD670A521B266DB0089D1E8 /* LaunchScreen.storyboard in Resources */,
 				CCD670A221B266DB0089D1E8 /* Assets.xcassets in Resources */,
+				CB28997621E76B22002AA855 /* ひまわりの種.png in Resources */,
 				CB3CEB9F21C4E50E00E27771 /* インド人のフリーアイコン3 (1).png in Resources */,
 				CCD670A021B266DA0089D1E8 /* Main.storyboard in Resources */,
+				CB28997821E76B75002AA855 /* 土！！！.png in Resources */,
 				CB3CEB9E21C4E50E00E27771 /* インド人のフリーアイコン3.png in Resources */,
+				CB28997A21E76CFD002AA855 /* ひまわり途中.png in Resources */,
+				CB28998221E9C360002AA855 /* ひまわりの種(ガチ).png in Resources */,
+				CB28998321E9C360002AA855 /* ひまわりの双葉(ガチ).png in Resources */,
+				CB28997C21E76D4F002AA855 /* ひまわりの双葉.png in Resources */,
+				CB28997021E76497002AA855 /* スクリーンショット 2019-01-10 20.29.35.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

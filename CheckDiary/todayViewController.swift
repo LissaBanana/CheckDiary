@@ -10,6 +10,8 @@ import UIKit
 
 class todayViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    var day: Date!
+    
     @IBOutlet var contentTextView: UITextView!
     
     @IBOutlet var cameraImageView: UIImageView!
@@ -22,21 +24,31 @@ class todayViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
     var saveData : UserDefaults = UserDefaults.standard
     
     
-    var checked: UIImage = UIImage(named: "インド人のフリーアイコン3.png")!
-    var unchecked: UIImage = UIImage(named: "インド人のフリーアイコン3 (2).png")!
-    var checked2: UIImage = UIImage(named: "インド人のフリーアイコン3.png")!
-    var unchecked2: UIImage = UIImage(named: "インド人のフリーアイコン3 (2).png")!
-    var checked3: UIImage = UIImage(named: "インド人のフリーアイコン3.png")!
-    var unchecked3: UIImage = UIImage(named: "インド人のフリーアイコン3 (2).png")!
-    var checked4: UIImage = UIImage(named: "インド人のフリーアイコン3.png")!
-    var unchecked4: UIImage = UIImage(named: "インド人のフリーアイコン3 (2).png")!
+    var checked: UIImage = UIImage(named: "ひまわりの種.png")!
+    var unchecked: UIImage = UIImage(named: "ひまわりの種(ガチ).png")!
     
+    var checked2: UIImage = UIImage(named: "ひまわりの双葉.png")!
+    var unchecked2: UIImage = UIImage(named: "ひまわりの双葉(ガチ).png")!
     
+    var checked3: UIImage = UIImage(named: "ひまわり途中.png")!
+    var unchecked3: UIImage = UIImage(named: "ひまわり途中(ガチ).png")!
+    
+    var checked4: UIImage = UIImage(named: "ひまわり茎.png")!
+    var unchecked4: UIImage = UIImage(named: "ひまわり(ガチ).png")!
+    
+   
+    
+    var btn: Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         contentTextView.text = saveData.object(forKey:  "content")as? String
+        
+        //zenzen.isHidden = false
+        //sonnnani.isHidden = false
+        //mama.isHidden = false
+        //dekitayo.isHidden = false
       
 
         // Do any additional setup after loading the view.
@@ -48,8 +60,17 @@ class todayViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
     }
     
     @IBAction func savememo() {
-        //user defultsに書き込み
-        saveData.set(contentTextView.text, forKey: "title")
+        
+        // ユーザデフォルトから呼び出す
+        var daysArray = saveData.array(forKey: "days") ?? []
+        // 各保存したい値をまとめる
+        let today = ["btn": btn, "image": UIImagePNGRepresentation(cameraImageView.image!)! as NSData, "text": contentTextView.text, "date": day] as [String : Any]
+        // まとめた値を配列に入れる
+        daysArray.append(today)
+        // まとめた配列をユーザフォルトへ保存する
+        saveData.set(daysArray, forKey: "days")
+        
+        //saveData.set(contentTextView.text, forKey: "title")
         contentTextView.resignFirstResponder()
         
     }
@@ -62,35 +83,45 @@ class todayViewController: UIViewController, UITextFieldDelegate, UIImagePickerC
     //スタンプ押したり押さなかったり
     @IBAction func dekitayo(_ sender: Any) {
         
-        dekitayo.setImage(checked, for: .normal)
-        mama.setImage(unchecked2, for: .normal)
-        sonnnani.setImage(unchecked3, for: .normal)
-        zenzen.setImage(unchecked4, for: .normal)
+        dekitayo.setImage(checked4, for: .normal)
+        mama.setImage(unchecked3, for: .normal)
+        sonnnani.setImage(unchecked2, for: .normal)
+        zenzen.setImage(unchecked, for: .normal)
+        
+        btn = 3
+        
     }
     
     @IBAction func mama(_ sender: Any) {
         
-        mama.setImage(checked2, for: .normal)
-        dekitayo.setImage(unchecked, for: .normal)
-        sonnnani.setImage(unchecked3, for: .normal)
-        zenzen.setImage(unchecked4, for: .normal)
+        mama.setImage(checked3, for: .normal)
+        dekitayo.setImage(unchecked4, for: .normal)
+        sonnnani.setImage(unchecked2, for: .normal)
+        zenzen.setImage(unchecked, for: .normal)
+        
+        btn = 2
     
     }
     
     @IBAction func sonnnani(_ sender: Any) {
         
-        sonnnani.setImage(checked3, for: .normal)
-        dekitayo.setImage(unchecked, for: .normal)
-        mama.setImage(unchecked2, for: .normal)
-        zenzen.setImage(unchecked4, for: .normal)
+        sonnnani.setImage(checked2, for: .normal)
+        dekitayo.setImage(unchecked4, for: .normal)
+        mama.setImage(unchecked3, for: .normal)
+        zenzen.setImage(unchecked, for: .normal)
+        
+        btn = 1
     }
     
     @IBAction func zenzen(_ sender: Any){
         
-        zenzen.setImage(checked4, for: .normal)
-        dekitayo.setImage(unchecked, for: .normal)
-        mama.setImage(unchecked2, for: .normal)
-        sonnnani.setImage(unchecked3, for: .normal)
+        zenzen.setImage(checked, for: .normal)
+        dekitayo.setImage(unchecked4, for: .normal)
+        mama.setImage(unchecked3, for: .normal)
+        sonnnani.setImage(unchecked2, for: .normal)
+        
+        btn = 0
+        
     }
     
     //写真とるよ
